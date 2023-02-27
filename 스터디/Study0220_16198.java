@@ -1,3 +1,5 @@
+package study;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,9 +18,10 @@ public class Study0220_16198 {
         N=Integer.parseInt(in.readLine());
         arr= new int [N];
         visit = new boolean [N];
-        StringTokenizer st= new StringTokenizer(in.readLine());
+
         ArrayList<Integer> al = new ArrayList<>();
         for(int i=0;i<N;i++){
+            StringTokenizer st= new StringTokenizer(in.readLine());
            arr[i]=Integer.parseInt(st.nextToken());
         }
         dfs(0,0);
