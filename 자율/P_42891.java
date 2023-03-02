@@ -11,24 +11,17 @@ public class P_42891 {
         int [] food_times={3,1,2};
         long k = 5;
         int size = food_times.length;
-        int index = 0;
-        while(k!=0){
-            if(food_times[index]==0){
-                if(index==size-1){
-                    index=0;
-                }else{
-                    index++;
-                }
-                continue;
-            }
-            food_times[index]--;
-            if(index==size-1){
-                index=0;
-            }
-            index++;
-            k--;
+        int [] clone = food_times.clone();
+        Arrays.sort(clone);
+        int index =0;
+        int ans=0;
+        if(k>clone[index]){
+            ans=size%5;
         }
-        System.out.println(index);
+        while(k>clone[index]){
+            
+        }
+
 
     }
 }
