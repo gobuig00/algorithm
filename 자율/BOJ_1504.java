@@ -7,7 +7,6 @@ import java.util.StringTokenizer;
 
 public class BOJ_1504 {
     static int N;
-    static ArrayList<>
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st= new StringTokenizer(in.readLine());
